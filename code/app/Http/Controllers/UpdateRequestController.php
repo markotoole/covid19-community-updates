@@ -30,8 +30,8 @@ class UpdateRequestController extends Controller
         $status->category_id = $request->category;
         $status->status = $request->status;
         $status->name = $request->name ?? $request->update_id;
-        $status->delivery = $request->delivery;
-        $status->service_offered = $request->service_offered;
+        $status->delivery = $request->delivery || $request->delivery == 'on';
+        $status->service_offered = $request->service_offered || $request->service_offered == 'on';
         $status->phone = $request->phone;
         $status->link = $request->link;
         $status->notes = $request->notes;
