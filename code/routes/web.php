@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@main')
+     ->name('home');
+Route::get('/submit', 'UpdateRequestController@submitForm');
+Route::post('/submit', 'UpdateRequestController@submit')
+     ->name('update.submit');
+Route::get('/statuses/name', 'ServiceUpdateController@searchByName')
+     ->name('services.name');
+Route::get('/publish/{id}', 'UpdateRequestController@publish')
+     ->name('update.publish');

@@ -19,15 +19,21 @@ class CreateServiceStatusesTable extends Migration
                 $table->id();
                 $table->timestamps();
                 $table->string('name');
-                $table->string('status');
+                $table->string('status')
+                      ->nullable();
                 $table->boolean('delivery')
                       ->nullable();
                 $table->boolean('service_offered')
                       ->nullable();
-                $table->string('phone');
-                $table->string('link');
+                $table->string('phone')
+                      ->nullable();
+                $table->string('link')
+                      ->nullable();
                 $table->text('notes')
                       ->nullable();
+                $table->integer('category_id')->nullable();
+                $table->string('draft_status')
+                      ->default('draft');
             }
         );
     }

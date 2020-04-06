@@ -3,6 +3,7 @@ code/public/hot
 code/public/storage
 code/storage/*.key
 /code/vendor
+/code/public/vendor
 .env
 code/.env.backup
 code/.phpunit.result.cache

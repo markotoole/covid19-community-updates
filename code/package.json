@@ -21,6 +21,14 @@
     },
     "dependencies": {
         "bootstrap": "^4.4.1",
+        "bootstrap-autocomplete": "^2.3.3",
+        "datatables.net": "^1.10.20",
+        "datatables.net-bs4": "^1.10.20",
+        "datatables.net-buttons-bs4": "^1.6.1",
+        "datatables.net-dt": "^1.10.20",
+        "datatables.net-fixedheader-bs4": "^3.1.6",
+        "datatables.net-responsive-bs4": "^2.2.3",
+        "jQuery": "^1.7.4",
         "jquery": "^3.4.1",
         "popper.js": "^1.16.1"
     }

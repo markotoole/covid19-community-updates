@@ -29,24 +29,23 @@ body {
   top: 18px;
 }
 
-.content {
-  text-align: center;
-}
-
 .title {
   font-size: 84px;
 }
 
-.links > a {
-  color: $brand-text-color;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  padding: 0 25px;
-  text-decoration: none;
-  text-transform: uppercase;
+.main-content {
+  margin: auto;
+  max-width: 1024px;
+  padding: 20px;
 }
 
-.m-b-md {
-  margin-bottom: 30px;
+.main-info {
+  .page-header {
+    min-height: 500px;
+
+    .container {
+      padding-top: 130px;
+      text-align: center;
+    }
+  }
 }

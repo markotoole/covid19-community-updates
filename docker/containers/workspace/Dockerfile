@@ -19,6 +19,10 @@ RUN php -r "copy('https://getcomposer.org/installer', '/tmp/composer-setup.php')
 RUN php /tmp/composer-setup.php --install-dir=/usr/bin --filename=composer
 RUN rm /tmp/composer-setup.php
 
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+  && apt-get install -y nodejs \
+  && curl -L https://www.npmjs.com/install.sh | sh
+
 ###########################################################################
 # Commander non-root user:
 ###########################################################################
