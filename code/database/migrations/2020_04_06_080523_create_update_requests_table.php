@@ -18,7 +18,7 @@ class CreateUpdateRequestsTable extends Migration
             function (Blueprint $table) {
                 $table->id();
                 $table->timestamps();
-                $table->text('state')
+                $table->string('state')
                       ->default('new');
                 $table->integer('update_status_id')
                       ->nullable();
