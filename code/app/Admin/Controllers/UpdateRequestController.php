@@ -28,6 +28,35 @@ class UpdateRequestController extends AdminController
     {
         $grid = new Grid(new UpdateRequest());
 
+        $grid->filter(
+            function ($filter) {
+
+                $filter->disableIdFilter();
+                $filter->where(
+                    function ($query) {
+                        switch ($this->input) {
+                            case 'new':
+                                // custom complex query if the 'yes' option is selected
+                                $query->where('state', '=', 'new');
+                                break;
+                            case 'closed':
+                                $query->where('state', '=', 'Closed');
+                                break;
+                        }
+                    },
+                    'State',
+                    'status'
+                )
+                       ->radio(
+                           [
+                               '' => 'All',
+                               'new' => 'Only New',
+                               'closed' => 'Only Closed',
+                           ]
+                       );
+            }
+        );
+
         $grid->column('id', __('Id'));
         $grid->column('state', __('State'));
         $grid->status()

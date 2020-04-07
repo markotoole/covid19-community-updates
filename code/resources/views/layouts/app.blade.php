@@ -7,30 +7,42 @@
     <title>Laravel</title>
 </head>
 <body>
-<div class="full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
-
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}">Register</a>
-                @endif
-            @endauth
-        </div>
-    @endif
-
-    <div class="main-content">
-        @if(Session::has('message'))
-            <div class="alert alert-success">
-                {{ Session::get('message')}}
+<div class="content-wrapper">
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="/">Community updates</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/submit">Submit an Update</a>
+                    </li>
+                </ul>
             </div>
-        @endif
-        @yield('content')
+        </nav>
+
+        <div class="container">
+            @if(Session::has('message'))
+                <div class="alert alert-success">
+                    {{ Session::get('message')}}
+                </div>
+            @endif
+            @yield('content')
+        </div>
     </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright © 2020 Civiq. All rights reserved</small>
+        </div>
+    </footer>
 </div>
+
 <script type="text/javascript" src="/js/app.js"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>

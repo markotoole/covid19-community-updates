@@ -28,6 +28,36 @@ class ServiceStatusController extends AdminController
         /** @var ServiceStatus | Grid $grid */
         $grid = new Grid(new ServiceStatus());
 
+
+        $grid->filter(
+            function ($filter) {
+
+                $filter->disableIdFilter();
+                $filter->where(
+                    function ($query) {
+                        switch ($this->input) {
+                            case 'draft':
+                                // custom complex query if the 'yes' option is selected
+                                $query->where('draft_status', '=', 'Draft');
+                                break;
+                            case 'public':
+                                $query->where('draft_status', '=', 'Public');
+                                break;
+                        }
+                    },
+                    'State',
+                    'state'
+                )
+                       ->radio(
+                           [
+                               '' => 'All',
+                               'public' => 'Only Public',
+                               'draft' => 'Only Draft',
+                           ]
+                       );
+            }
+        );
+
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('status', __('Status'));

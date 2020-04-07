@@ -20,5 +20,7 @@ Route::post('/submit', 'UpdateRequestController@submit')
      ->name('update.submit');
 Route::get('/statuses/name', 'ServiceUpdateController@searchByName')
      ->name('services.name');
+Route::get('/statuses/id', 'ServiceUpdateController@getById')
+     ->name('services.id');
 Route::get('/publish/{id}', 'UpdateRequestController@publish')
      ->name('update.publish');

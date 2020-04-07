@@ -22,4 +22,16 @@ class ServiceUpdateController extends Controller
 
         return new JsonResponse($result);
     }
+
+    public function getById(Request $request)
+    {
+        $id = $request->get('q');
+
+        $instance = ServiceStatus::where('id', '=', $id)
+                                 ->where('draft_status', '=', 'Public')
+                                 ->get()
+                                 ->first();
+
+        return new JsonResponse($instance);
+    }
 }

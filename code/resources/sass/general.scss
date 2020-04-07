@@ -5,12 +5,29 @@ body {
   color: $brand-text-color;
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
-  height: 100vh;
+  height: 100%;
   margin: 0;
+
 }
 
-.full-height {
-  height: 100vh;
+body {
+  padding-top: 5rem;
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-bottom: 4em;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 .flex-center {
@@ -41,11 +58,15 @@ body {
 
 .main-info {
   .page-header {
-    min-height: 500px;
+    min-height: 380px;
 
     .container {
-      padding-top: 130px;
+      padding-top: 80px;
       text-align: center;
     }
   }
+}
+
+.navbar {
+  background-color: $brand-light-color;
 }

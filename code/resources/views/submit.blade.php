@@ -5,8 +5,8 @@
         {!!Form::open()->route('update.submit')->attrs(['id' => 'update-form'])->errorBag('updateErrorBag') !!}
         {!!Form::errors("The form has errors")!!}
         {!!Form::select('update_status', 'Update status')->placeholder('Select one')->options(['new' => 'New', 'update' => 'Update'])->placeholder('Select one')!!}
-        {!!Form::text('name', 'Business Name')->required()->wrapperAttrs(['id'=> 'name']) !!}
-        {!!Form::select('update_id', 'Business Name For Update')->required()->attrs(['data-url' => '/statuses/name'])->wrapperAttrs(['id'=> 'update-id'])->autocomplete('off')!!}
+        {!!Form::select('update_id', 'Business Name to update')->required()->attrs(['data-url' => '/statuses/name'])->wrapperAttrs(['id'=> 'update-id'])->autocomplete('off')!!}
+        {!!Form::text('name', 'New Business Name')->required()->wrapperAttrs(['id'=> 'name']) !!}
         {!!Form::select('category', 'Category')->options($categories->prepend('Choose category', ''), 'name', 'id', '')->placeholder('Select one')!!}
         {!!Form::select('status', 'Current status')->options($statuses)->placeholder('Select one')!!}
 
