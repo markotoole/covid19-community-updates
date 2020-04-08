@@ -43,7 +43,7 @@
     </div>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
-            <small>Contact: CiviQ | info@civiq.eu | 086 1408681</small>
+            <small>Idea & Design by Ross McCarthy (<a href="https://status-naas.com">status-naas.com</a>). Developed by CiviQ. Contact info@civiq.eu | 086 1408681</small>
         </div>
     </footer>
 </div>
