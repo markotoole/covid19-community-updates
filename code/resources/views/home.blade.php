@@ -12,16 +12,6 @@
         </div>
 
     </div>
-    {{--<div class="links">--}}
-    {{--<a href="https://laravel.com/docs">Docs</a>--}}
-    {{--<a href="https://laracasts.com">Laracasts</a>--}}
-    {{--<a href="https://laravel-news.com">News</a>--}}
-    {{--<a href="https://blog.laravel.com">Blog</a>--}}
-    {{--<a href="https://nova.laravel.com">Nova</a>--}}
-    {{--<a href="https://forge.laravel.com">Forge</a>--}}
-    {{--<a href="https://vapor.laravel.com">Vapor</a>--}}
-    {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
-    {{--</div>--}}
     <div class="bg-white">
         <div class="table-service p-4">
             <table id="table-service" class="table table-striped table-bordered dt-responsive nowrap">
@@ -35,7 +25,6 @@
                     <th>Contact No.</th>
                     <th> Website/Social Media Link</th>
                     <th>Notes</th>
-                    {{--<th>Hot Food Collection/Takeaway ?</th>--}}
                 </tr>
                 </thead>
                 <tbody>
@@ -49,7 +38,6 @@
                         <td>{{ $status->phone}}</td>
                         <td>{{ $status->link}}</td>
                         <td>{{ $status->notes}}</td>
-                        {{--<td>No</td>--}}
                     </tr>
                 @endforeach
                 </tbody>

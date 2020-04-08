@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-
-    <title>Community updates</title>
+    <link rel="shortcut icon" href="/img/CU favicon.png" type="image/x-icon">
+    <title>Celbridge updates</title>
 </head>
 <body>
 <div class="content-wrapper bg-dark">
@@ -16,7 +16,7 @@
     <div class="bg-castletown"></div>
     <div class="content ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="/">Community updates</a>
+            <a class="navbar-brand" href="/">Celbridge updates</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -104,6 +104,19 @@ footer {
 
   #update-form {
     padding-top: 3rem;
+
+    .mobile-checkbox label {
+      width: 100%;
+    }
   }
 
+}
+
+.form-group.required label:after, label.required:after,
+#update-form #update-id label:after,
+#update-form #name label:after
+{
+  content: "*";
+  color: red;
+  margin-left: 3px;
 }

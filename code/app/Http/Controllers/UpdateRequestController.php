@@ -12,8 +12,8 @@ class UpdateRequestController extends Controller
     {
         $categories = \App\Models\Category::all();
         $statuses = ServiceStatus::getSelectEnum('status');
-
-        return view('submit', ['categories' => $categories, 'statuses' => $statuses, 'captcha' => captcha_img()]);
+        $statuses = array_merge($statuses,['' => 'Choose current status'] );
+        return view('submit', ['categories' => $categories, 'statuses' => $statuses, 'captcha' => captcha_img('flat')]);
     }
 
     public function submit(Request $request)
