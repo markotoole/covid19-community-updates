@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
 
@@ -48,7 +48,7 @@
     </footer>
 </div>
 
-<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
 <script type="text/javascript"
         src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@master/dist/latest/bootstrap-autocomplete.min.js"></script>
