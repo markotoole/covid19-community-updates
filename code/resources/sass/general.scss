@@ -10,9 +10,8 @@ body {
 
 }
 
-body {
-  padding-top: 5rem;
-
+html body {
+  margin-top: 56px;
 }
 
 .content-wrapper {
@@ -24,6 +23,7 @@ body {
 .content {
   flex: 1 0 auto;
   padding-bottom: 4em;
+  z-index: 1;
 }
 
 footer {
@@ -47,7 +47,8 @@ footer {
 }
 
 .title {
-  font-size: 84px;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .main-content {
@@ -57,8 +58,11 @@ footer {
 }
 
 .main-info {
+  background-color: rgba(52, 58, 64, 0.1);
+
   .page-header {
-    min-height: 380px;
+    min-height: 340px;
+    padding-bottom: 40px;
 
     .container {
       padding-top: 80px;
@@ -69,4 +73,33 @@ footer {
 
 .navbar {
   background-color: $brand-light-color;
+}
+
+.bg-castletown {
+  background-image: url("/img/home/castletown.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+  background-size: cover;
+
+  &:after {
+    width: 100%;
+    height: 100px;
+    content: "";
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: left top, left bottom;
+    background-color: #343a40;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+#update-form {
+  padding-top: 3rem;
+
 }

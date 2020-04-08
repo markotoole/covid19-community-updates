@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="update-form">
+    <div id="update-form" class="bg-white ">
+        <h1>Submit and update</h1>
         {!!Form::open()->route('update.submit')->attrs(['id' => 'update-form'])->errorBag('updateErrorBag') !!}
         {!!Form::errors("The form has errors")!!}
         {!!Form::select('update_status', 'Update status')->placeholder('Select one')->options(['new' => 'New', 'update' => 'Update'])->placeholder('Select one')!!}

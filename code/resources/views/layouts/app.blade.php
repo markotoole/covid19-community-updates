@@ -11,9 +11,11 @@
     <title>Community updates</title>
 </head>
 <body>
-<div class="content-wrapper">
-    <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="content-wrapper bg-dark">
+
+    <div class="bg-castletown"></div>
+    <div class="content ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="/">Community updates</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +26,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/submit">Submit an Update</a>
+                    <li class="nav-item"><a class="nav-link" href="/submit">Submit an Update</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container-sm pd-3 pb-3">
             @if(Session::has('message'))
                 <div class="alert alert-success">
                     {{ Session::get('message')}}
@@ -42,7 +43,7 @@
     </div>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
-            <small>Copyright © 2020 Civiq. All rights reserved</small>
+            <small>Contact: CiviQ | info@civiq.eu | 086 1408681</small>
         </div>
     </footer>
 </div>
