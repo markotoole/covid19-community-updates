@@ -76,7 +76,7 @@ footer {
 }
 
 .bg-castletown {
-  background-image: url("/img/home/castletown.png");
+  background-image: url("/img/home/castletown-min.png");
   position: absolute;
   top: 0;
   bottom: 0;
@@ -99,7 +99,11 @@ footer {
   }
 }
 
-#update-form {
+.form-update-wrapper {
   padding-top: 3rem;
+
+  #update-form {
+    padding-top: 3rem;
+  }
 
 }
