@@ -143,6 +143,12 @@ class UpdateRequestController extends AdminController
                 $this->statusUpdateFields($form, 'update_status');
             }
         );
+
+        $form->submitted(
+            function ($item) {
+                $item->ignore('update_status');
+            }
+        );
         $form->tools(
             function (Form\Tools $tools) {
                 $tools->append(
@@ -173,8 +179,8 @@ class UpdateRequestController extends AdminController
              ->options(ServiceStatus::getSelectEnum('status'));
         $form->switch($fieldPrefix.'.delivery', __('Delivery'));
         $form->switch($fieldPrefix.'.service_offered', __('Service offered'));
-        $form->mobile($fieldPrefix.'.phone', __('Phone'));
-        $form->url($fieldPrefix.'.link', __('Link'));
+        $form->text($fieldPrefix.'.phone', __('Phone'));
+        $form->text($fieldPrefix.'.link', __('Link'));
         $form->textarea($fieldPrefix.'.notes', __('Notes'));
     }
 
@@ -196,9 +202,9 @@ class UpdateRequestController extends AdminController
              ->disable();
         $form->switch($fieldPrefix.'.service_offered', __('Service offered'))
              ->disable();
-        $form->mobile($fieldPrefix.'.phone', __('Phone'))
+        $form->text($fieldPrefix.'.phone', __('Phone'))
              ->disable();
-        $form->url($fieldPrefix.'.link', __('Link'))
+        $form->text($fieldPrefix.'.link', __('Link'))
              ->disable();
         $form->textarea($fieldPrefix.'.notes', __('Notes'))
              ->disable();

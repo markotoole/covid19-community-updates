@@ -128,8 +128,8 @@ class ServiceStatusController extends AdminController
              ->options(ServiceStatus::getSelectEnum('status'));
         $form->switch('delivery', __('Delivery'));
         $form->switch('service_offered', __('Service offered'));
-        $form->mobile('phone', __('Phone'));
-        $form->url('link', __('Link'));
+        $form->text('phone', __('Phone'));
+        $form->text('link', __('Link'));
         $form->textarea('notes', __('Notes'));
 
         $form->select('draft_status', __('Draft status'))

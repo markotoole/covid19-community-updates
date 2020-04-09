@@ -12,7 +12,9 @@ $(document).ready(function () {
     }
   }
 
-  $('#table-service').DataTable({
+  var $table = $('#table-service')
+  $table.DataTable({
+    response: true,
     dom: '<"table-top"if>rt<"table-bottom"lp>',
     paging: false,
     language: {
@@ -20,6 +22,15 @@ $(document).ready(function () {
       search: '',
     }
   })
+
+  $(window).resize(function () {
+    $table.css('width', '100%')
+  })
+
+  $(window).resize(function () {
+    $('#log').append('<div>Handler for .resize() called.</div>')
+  })
+
   var $updateForm = $('#update-form')
   var $updateId = $('#update-id')
 
