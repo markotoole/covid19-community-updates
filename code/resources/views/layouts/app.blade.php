@@ -30,9 +30,9 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/posts">Business Supports</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information</a>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics</a>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
                     </li>
                 </ul>
             </div>
