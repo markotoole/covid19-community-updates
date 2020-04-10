@@ -14,7 +14,7 @@
     <div>
         <div class="blog">
             @foreach( $posts as $post)
-                <div class="card mb-3">
+                <div class="card mb-3" data-link="/posts/{{$post->id}}">
                     <div class="card-body">
                         <a href="/posts/{{$post->id}}" style="text-decoration: none"><h5
                                     class="card-title">{{ $post->title}}</h5>

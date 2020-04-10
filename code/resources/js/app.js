@@ -59,4 +59,10 @@ $(document).ready(function () {
 
   })
 
+  $('.blog .card').on('click', function () {
+      document.location.replace($(this).data('link'))
+    }
+  )
+
 })
+
