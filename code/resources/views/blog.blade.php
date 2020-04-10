@@ -2,11 +2,15 @@
 
 @section('content')
     <div class="tint-gray">
-        <div class="page-header pt-4 pb-4 pl-1">
-            <div class="container">
+        <div class="page-header pt-4 pb-4">
+            <div class="">
                 <div class="title text-white">
                     Business Supports
                 </div>
+
+            </div>
+            <div class="bg-white p-3" style="max-width: 547px;     border-radius: .25rem;">
+                Please let us know if there are other supports that should be included by emailing <a href="mailto:info@ourcelbridge.info" >info@ourcelbridge.info</a>
             </div>
         </div>
 
