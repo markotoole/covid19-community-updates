@@ -23,6 +23,7 @@ $(document).ready(function () {
     }
   })
   $table.removeClass('nowrap')
+  $table.css('width', '100%')
 
   $(window).resize(function () {
     $table.css('width', '100%')

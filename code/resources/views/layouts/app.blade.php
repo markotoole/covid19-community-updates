@@ -11,7 +11,7 @@
     <title>Celbridge updates</title>
 </head>
 <body>
-<div class="content-wrapper bg-dark">
+<div class="content-wrapper brand-background">
 
     <div class="bg-castletown"></div>
     <div class="content ">
@@ -32,7 +32,7 @@
             </div>
         </nav>
 
-        <div class="container-sm pd-3 pb-3">
+        <div class="container-sm pb-3">
             @if(Session::has('message'))
                 <div class="alert alert-success">
                     {{ Session::get('message')}}

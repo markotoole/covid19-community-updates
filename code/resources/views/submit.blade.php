@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="form-update-wrapper">
-        <h1 class="title text-white">Submit an Update</h1>
+    <div class="form-update-wrapper tint-gray">
+        <h1 class="title text-white pl-4">Submit an Update</h1>
         <div id="update-form" class="bg-white p-3">
             {!!Form::open()->route('update.submit')->attrs(['id' => 'update-form'])->errorBag('updateErrorBag') !!}
             {!!Form::errors("The form has errors")!!}

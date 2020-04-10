@@ -49,6 +49,14 @@ footer {
 .title {
   font-size: 60px;
   font-weight: bold;
+  @media (max-width: 425px) {
+    font-size: 50px;
+  }
+}
+
+.tint-gray {
+  background: transparent;
+  background: linear-gradient(90deg,rgba(2,0,36,0) 1%,#00000030 10%,rgba(0, 0, 0, 0.3) 91%,rgba(0,212,255,0));
 }
 
 .main-content {
@@ -58,7 +66,6 @@ footer {
 }
 
 .main-info {
-  background-color: rgba(52, 58, 64, 0.1);
 
   .page-header {
     min-height: 340px;
@@ -76,7 +83,7 @@ footer {
 }
 
 .bg-castletown {
-  background-image: url("/img/home/castletown-min.png");
+  background-image: url("/img/home/castletown.min.jpg");
   position: absolute;
   top: 0;
   bottom: 0;
@@ -93,10 +100,14 @@ footer {
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: left top, left bottom;
-    background-color: #343a40;
+    background-color: $brant-background-color;
     position: absolute;
     bottom: 0;
   }
+}
+
+.brand-background {
+  background-color: $brant-background-color;
 }
 
 .form-update-wrapper {
@@ -114,9 +125,10 @@ footer {
 
 .form-group.required label:after, label.required:after,
 #update-form #update-id label:after,
-#update-form #name label:after
-{
+#update-form #name label:after {
   content: "*";
   color: red;
   margin-left: 3px;
 }
+
+

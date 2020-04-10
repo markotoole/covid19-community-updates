@@ -10,9 +10,10 @@ class UpdateRequestController extends Controller
 {
     public function submitForm()
     {
-        $categories = \App\Models\Category::all();
+        $categories = \App\Models\Category::query()->orderBy('name')->get();
         $statuses = ServiceStatus::getSelectEnum('status');
-        $statuses = array_merge($statuses,['' => 'Choose current status'] );
+        $statuses = array_merge($statuses, ['' => 'Choose current status']);
+
         return view('submit', ['categories' => $categories, 'statuses' => $statuses, 'captcha' => captcha_img('flat')]);
     }
 
@@ -48,7 +49,10 @@ class UpdateRequestController extends Controller
             throw $exception;
         }
 
-        return redirect(route('home'))->with('message', 'Thank you for update!');
+        return redirect(route('home'))->with(
+            'message',
+            'Thank you for update! We will just give it a quick check before publishing.'
+        );
     }
 
     public function publish(Request $request, $id)
@@ -61,7 +65,8 @@ class UpdateRequestController extends Controller
         $status = $updateRequest->status()
                                 ->first();
 
-        if ($updateStatus = $updateRequest->update_status()->first()) {
+        if ($updateStatus = $updateRequest->update_status()
+                                          ->first()) {
             $updateStatus->draft();
             $updateStatus->save();
         }

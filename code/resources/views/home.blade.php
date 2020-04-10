@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="main-info">
+    <div class="main-info tint-gray">
         <div class="page-header">
             <div class="container">
                 <div class="title text-white">
@@ -13,12 +13,12 @@
 
     </div>
     <div class="bg-white">
-        <div class="table-service p-4">
+        <div class="table-service p-md-4 p-1">
             <table id="table-service" class="table table-striped table-bordered dt-responsive nowrap">
                 <thead>
                 <tr>
-                    <th>Category</th>
-                    <th>Name</th>
+                    <th data-priority="1" rowspan="1" colspan="1" class="all">Category</th>
+                    <th data-priority="1" rowspan="1" colspan="1" class="all">Name</th>
                     <th>Status</th>
                     <th>Delivery</th>
                     <th>Collection</th>
