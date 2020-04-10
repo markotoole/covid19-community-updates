@@ -17,5 +17,6 @@ Route::group(
         $router->resource('service-statuses', 'ServiceStatusController');
         $router->resource('categories', 'CategoryController');
         $router->resource('update-requests', 'UpdateRequestController');
+        $router->resource('posts', 'PostController');
     }
 );

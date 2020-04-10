@@ -12,3 +12,4 @@ code/npm-debug.log
 code/yarn-error.log
 docker/data
 docker/logs
+public/uploads/
