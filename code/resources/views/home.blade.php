@@ -23,7 +23,7 @@
                 #inthistogether #lovelocal</p>
         </div>
         <div class="table-service ">
-            <table id="table-service" class="table table-striped table-bordered dt-responsive nowrap">
+            <table id="table-service" class="table table-striped table-bordered dt-responsive">
                 <thead>
                 <tr>
                     <th data-priority="1" rowspan="1" colspan="1" class="all">Category</th>

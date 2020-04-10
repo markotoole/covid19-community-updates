@@ -22,7 +22,6 @@ $(document).ready(function () {
       search: '',
     }
   })
-  $table.removeClass('nowrap')
   $table.css('width', '100%')
 
   $(window).resize(function () {
