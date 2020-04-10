@@ -16,8 +16,14 @@
 
     <div class="bg-white p-md-4 p-0" style="border-radius: .25rem;">
         <div class="bg-white p-md-0 p-2">
-            <p>Let’s continue giving our local businesses as much support as we can at this time. Please buy local. Perhaps even contact closed businesses to purchase a service/product in advance where possible. Thanks to all of our businesses and to those that are offering delivery services to those of our community cocooning at the moment. </p>
-            <p><a href="/submit">Please add to this list</a> and correct/update any listings as necessary. #inthistogether #lovelocal</p>
+            <p>Thanks to all of our businesses and to those that are offering delivery services to those of our
+                community cocooning at the moment.</p>
+            <p>Let’s continue giving our local businesses as much support as we can at this time. Please buy local.
+                Perhaps even contact closed businesses to purchase a service/product in advance where possible. Thanks
+                to all of our businesses and to those that are offering delivery services to those of our community
+                cocooning at the moment. </p>
+            <p><a href="/submit">Please add to this list</a> and correct/update any listings as necessary.
+                #inthistogether #lovelocal</p>
         </div>
         <div class="table-service ">
             <table id="table-service" class="table table-striped table-bordered dt-responsive nowrap">
