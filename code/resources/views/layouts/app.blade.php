@@ -28,7 +28,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/submit">Submit an Update</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/posts">Blog</a>
+                    <li class="nav-item"><a class="nav-link" href="/posts">Business Supports</a>
                     </li>
                 </ul>
             </div>
