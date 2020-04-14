@@ -5,13 +5,12 @@
         <div class="page-header pt-4 pb-4">
             <div class="">
                 <div class="title text-white">
-                    {{$title}}
+                    {{ $category['title'] }}
                 </div>
 
             </div>
             <div class="bg-white p-3" style="max-width: 547px;     border-radius: .25rem;">
-                Please let us know if there are other supports that should be included by emailing <a
-                        href="mailto:info@ourcelbridge.info">info@ourcelbridge.info</a>
+                {!! $category['description'] !!}
             </div>
         </div>
 

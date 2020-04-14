@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogCategory;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -15,10 +16,12 @@ class BlogController extends Controller
             abort(404);
         }
 
+        $category = BlogCategory::getCategory($type);
+
         return view(
             'blog',
             [
-                'title' => $types[$type],
+                'category' => $category,
                 'posts' => Post::query()
                                ->where('active', '=', true)
                                ->where('type', '=', $type)
