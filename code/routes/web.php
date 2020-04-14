@@ -25,7 +25,7 @@ Route::get('/statuses/id', 'ServiceUpdateController@getById')
 Route::get('/publish/{id}', 'UpdateRequestController@publish')
      ->name('update.publish');
 
-Route::get('/posts/', 'BlogController@list')
+Route::get('/blog/{type}', 'BlogController@list')
      ->name('blog.list');
 
 Route::get('/posts/{id}', 'BlogController@index')

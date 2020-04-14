@@ -28,9 +28,9 @@ class PostController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
+        $grid->column('type', __('Type'))
+             ->replace(Post::getTypes());
         $grid->column('active', __('Active'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }
@@ -39,6 +39,7 @@ class PostController extends AdminController
      * Make a show builder.
      *
      * @param mixed $id
+     *
      * @return Show
      */
     protected function detail($id)
@@ -47,6 +48,7 @@ class PostController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
+        $show->field('type', __('Type'));
         $show->field('content', __('Content'));
         $show->field('active', __('Active'));
         $show->field('created_at', __('Created at'));
@@ -65,7 +67,9 @@ class PostController extends AdminController
         $form = new Form(new Post());
 
         $form->text('title', __('Title'));
-        $form->image('title_image')->move('public/upload/image1/');
+        $form->select('type', __('Type'))->options( Post::getTypes());
+        $form->image('title_image')
+             ->move('public/upload/image1/');
         $form->ckeditor('summary', __('Summary'));
         $form->ckeditor('content', __('Content'));
         $form->switch('active', __('Active'));

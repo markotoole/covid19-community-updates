@@ -7,13 +7,21 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    public function list(Request $request)
+    public function list(Request $request, $type)
     {
+        $types = Post::getTypes();
+
+        if (! isset($types[$type])) {
+            abort(404);
+        }
+
         return view(
             'blog',
             [
+                'title' => $types[$type],
                 'posts' => Post::query()
                                ->where('active', '=', true)
+                               ->where('type', '=', $type)
                                ->get(),
             ]
         );

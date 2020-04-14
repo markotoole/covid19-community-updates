@@ -27,6 +27,7 @@ class ServiceStatus extends \Illuminate\Database\Eloquent\Model
         'open' => 'Open as usual',
         'closed' => 'Closed',
         'open_limit' => 'Limited Opening',
+        'delivery' => 'Delivery only',
     ];
 
     public function category()

@@ -5,7 +5,7 @@
         <div class="page-header">
             <div class="container">
                 <div class="title text-white">
-                    Celbridge Businesses - Updates
+                    Celbridge Status-Updates
                 </div>
             </div>
             <div class="flex-center mt-5"><a class="btn btn-primary btn-lg" href="/submit">Submit an Update</a></div>
@@ -16,11 +16,11 @@
 
     <div class="bg-white p-md-4 p-0" style="border-radius: .25rem;">
         <div class="bg-white p-md-0 p-2">
-            <p>Thanks to all of our businesses and to those that are offering delivery services to those of our
-                community cocooning at the moment. Let’s continue giving our local businesses as much support as we can at this time. Please buy local.
-                Perhaps even contact closed businesses to purchase a service/product in advance where possible.</p>
-            <p><a href="/submit">Please add to this list</a> and correct/update any listings as necessary.
-                #inthistogether #lovelocal</p>
+            <p>Click on any business or community group below for details of their current services during the COVID19
+                crisis. Let's continue giving our local businesses as much support as we can at this time. Please buy
+                local.</p>
+            <p>If you notice any changes to the listings or wish to add to it please <a href="/submit">Submit an
+                    Update </link>at any time.</p>
         </div>
         <div class="table-service ">
             <table id="table-service" class="table table-striped table-bordered dt-responsive">

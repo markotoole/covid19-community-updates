@@ -28,11 +28,19 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/submit">Submit an Update</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/posts">Business Supports</a>
+                    <li class="nav-item"><a class="nav-link" href="/blog/supports">Government Supports</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
+                    <li class="nav-item"><a class="nav-link" href="/blog/updates">Blog</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Celbridge FB pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
+                        </div>
                     </li>
                 </ul>
             </div>

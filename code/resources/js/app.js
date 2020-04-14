@@ -20,7 +20,8 @@ $(document).ready(function () {
     language: {
       searchPlaceholder: 'Search',
       search: '',
-    }
+    },
+    order: [[ 2, "desc" ], [ 3, "desc" ]]
   })
   $table.css('width', '100%')
 
