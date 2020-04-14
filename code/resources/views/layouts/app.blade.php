@@ -30,7 +30,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/blog/supports">Government Supports</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/blog/updates">Blog</a>
+                    <li class="nav-item"><a class="nav-link" href="/blog/updates">Council updates</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
