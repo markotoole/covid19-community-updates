@@ -20,7 +20,7 @@
                 crisis. Let's continue giving our local businesses as much support as we can at this time. Please buy
                 local.</p>
             <p>If you notice any changes to the listings or wish to add to it please <a href="/submit">Submit an
-                    Update </link>at any time.</p>
+                    Update</a> at any time.</p>
         </div>
         <div class="table-service ">
             <table id="table-service" class="table table-striped table-bordered dt-responsive">
