@@ -34,12 +34,14 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Celbridge FB pages
+                            Community Group pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
                             <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
                             <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge Community Help Squad</a>
+                            <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>
                         </div>
                     </li>
                 </ul>

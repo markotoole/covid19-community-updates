@@ -1,6 +1,6 @@
 # Community updates
 
-One Paragraph of project description goes here
+A lightweight php web app developed to enable collaborative Business & Community Status updates during the Covid-19 crisis
 
 ## Getting Started
 

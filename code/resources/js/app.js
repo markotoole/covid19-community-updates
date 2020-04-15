@@ -6,8 +6,10 @@ $(document).ready(function () {
 
     if (type === 'update') {
       $updateId.show().find('input').prop('required', true)
+      $nameTitle.find('label').html('Business Name Update (if any)')
     } else {
       $updateId.hide().find('input').prop('required', false)
+      $nameTitle.find('label').html('Business Name')
 
     }
   }
@@ -21,7 +23,7 @@ $(document).ready(function () {
       searchPlaceholder: 'Search',
       search: '',
     },
-    order: [[ 2, "desc" ], [ 3, "desc" ]]
+    order: [[2, 'desc'], [3, 'desc']]
   })
   $table.css('width', '100%')
 
@@ -35,6 +37,7 @@ $(document).ready(function () {
 
   var $updateForm = $('#update-form')
   var $updateId = $('#update-id')
+  var $nameTitle = $('#name')
 
   $('#update-id select').autoComplete()
 
