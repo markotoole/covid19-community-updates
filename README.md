@@ -11,19 +11,26 @@ Getting Started
 ```
 PHP 7.3
 Postgresql 11
+composer
 Docker (for develop)
 ```
 
 ### Installing
+Commands from code directory:
+```
+composer install
+php artisan migrate
+php artisan db:seed
+```
 
-### Devloping
+### Developing
 
 For developing you can use docker containers which part of the project. 
 
 ```
 docker-compose up -d
 ```
- 
+ The project will be on 80 port
 ## Deployment
 
 Root folder of application is /code/public
