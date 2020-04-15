@@ -21,6 +21,9 @@
                 local.</p>
             <p>If you notice any changes to the listings or wish to add to it please <a href="/submit">Submit an
                     Update</a> at any time.</p>
+            <div class="alert alert-primary d-md-none" role="alert">
+                To see status updates please turn your phone to landscape position.
+            </div>
         </div>
         <div class="table-service ">
             <table id="table-service" class="table table-striped table-bordered dt-responsive">

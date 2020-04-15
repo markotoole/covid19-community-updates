@@ -1,2 +1,39 @@
-php artisan migrate
-php artisan db:seed
+# Community updates
+
+One Paragraph of project description goes here
+
+## Getting Started
+
+Getting Started
+
+### Prerequisites
+
+```
+PHP 7.3
+Postgresql 11
+Docker (for develop)
+```
+
+### Installing
+
+### Devloping
+
+For developing you can use docker containers which part of the project. 
+
+```
+docker-compose up -d
+```
+ 
+## Deployment
+
+Root folder of application is /code/public
+
+## Authors
+
+* **[Civiq](https://civiq.co.uk/)** - *Initial work*
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

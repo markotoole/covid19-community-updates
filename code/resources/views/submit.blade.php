@@ -7,8 +7,8 @@
             {!!Form::open()->route('update.submit')->attrs(['id' => 'update-form'])->errorBag('updateErrorBag') !!}
             {!!Form::errors("The form has errors")!!}
             {!!Form::select('update_status', 'Update status')->placeholder('Select one')->required()->wrapperAttrs(['class'=> 'required'])->options(['' => 'Select from list..', 'new' => 'New', 'update' => 'Update'])->placeholder('Select one')!!}
-            {!!Form::select('update_id', 'Business Name to update')->required()->wrapperAttrs(['class'=> 'required'])->attrs(['data-url' => '/statuses/name'])->wrapperAttrs(['id'=> 'update-id'])->autocomplete('off')!!}
-            {!!Form::text('name', 'New Business Name')->required()->wrapperAttrs(['class'=> 'required'])->wrapperAttrs(['id'=> 'name']) !!}
+            {!!Form::select('update_id', 'Business Name')->required()->wrapperAttrs(['class'=> 'required'])->attrs(['data-url' => '/statuses/name'])->wrapperAttrs(['id'=> 'update-id'])->autocomplete('off')!!}
+            {!!Form::text('name', 'Business Name Correction/Update')->required()->wrapperAttrs(['class'=> 'required'])->wrapperAttrs(['id'=> 'name']) !!}
             {!!Form::select('category', 'Category')->required()->wrapperAttrs(['class'=> 'required'])->options($categories->prepend('Choose category', ''), 'name', 'id', '')!!}
             {!!Form::select('status', 'Current status')->required()->wrapperAttrs(['class'=> 'required'])->options($statuses)!!}
 
