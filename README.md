@@ -19,6 +19,7 @@ Docker (for develop)
 Commands from code directory:
 ```
 composer install
+npm install
 php artisan migrate
 php artisan db:seed
 ```
