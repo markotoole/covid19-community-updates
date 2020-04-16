@@ -124,8 +124,7 @@ footer {
 }
 
 .form-group.required label:after, label.required:after,
-#update-form #update-id label:after,
-#update-form #name label:after {
+#update-form #update-id label:after{
   content: "*";
   color: red;
   margin-left: 3px;

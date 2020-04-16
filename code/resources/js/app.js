@@ -6,11 +6,14 @@ $(document).ready(function () {
 
     if (type === 'update') {
       $updateId.show().find('input').prop('required', true)
-      $nameTitle.find('label').html('Business Name Update (if any)')
+
+      $nameTitle.removeClass('required').find('label').html('Business Name Update (if any)')
+      $nameTitle.find('input').prop('required', false)
     } else {
       $updateId.hide().find('input').prop('required', false)
-      $nameTitle.find('label').html('Business Name')
 
+      $nameTitle.addClass('required').find('label').html('Business Name')
+      $nameTitle.find('input').prop('required', true)
     }
   }
 

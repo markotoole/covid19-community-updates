@@ -50,7 +50,7 @@
 
         <div class="container-sm pb-3">
             @if(Session::has('message'))
-                <div class="alert alert-success">
+                <div class="alert alert-success mb-0">
                     {{ Session::get('message')}}
                 </div>
             @endif
