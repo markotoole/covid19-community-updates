@@ -25,7 +25,7 @@ class ServiceStatus extends \Illuminate\Database\Eloquent\Model
     protected $enumStatuses = [
         null => null,
         'open' => 'Open as usual',
-        'closed' => 'Closed',
+        'closed' => 'Temp. Closed',
         'open_limit' => 'Limited Opening',
         'delivery' => 'Delivery only',
     ];
