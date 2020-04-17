@@ -44,7 +44,7 @@
                     <tr>
                         <td>{{$status->category->name}}</td>
                         <td>{{ $status->name }}</td>
-                        <td>{{ $status->status}}</td>
+                        <td data-order="{{ $status->status == 'Open as usual' ? 1 : 0 }}">{{ $status->status}}</td>
                         <td>{{ $status->delivery ? 'Yes' : 'No'}}</td>
                         <td>{{ $status->service_offered ? 'Yes' : 'No'}}</td>
                         <td>{{ $status->phone}}</td>
