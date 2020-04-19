@@ -25,5 +25,9 @@ div.table-service {
     &.dataTable {
       display: table;
     }
+
+    tr.child {
+      word-break: break-word;
+    }
   }
 }
