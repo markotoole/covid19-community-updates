@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-    <link rel="shortcut icon" href="/img/CU favicon.png" type="image/x-icon">
-    <title>Celbridge updates</title>
+    <link rel="shortcut icon" href="/img/LU favicon.png" type="image/x-icon">
+    <title>Leixlip updates</title>
 </head>
 <body>
 <div class="content-wrapper brand-background">
@@ -16,7 +16,7 @@
     <div class="bg-castletown"></div>
     <div class="content ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="/">Celbridge updates</a>
+            <a class="navbar-brand" href="/">Leixlip updates</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,11 +37,9 @@
                             Community Group pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge Community Help Squad</a>
-                            <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/204259807304893/">Leixlip Community Help 2020</a>
+                            <a class="dropdown-item" href=" https://www.facebook.com/LeixlipNeedsYou/">Leixlip Needs You</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/leixlipcfr/">Leixlip Community First Responders</a>
                         </div>
                     </li>
                 </ul>
