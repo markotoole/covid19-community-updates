@@ -48,7 +48,7 @@
                         <td>{{ $status->delivery ? 'Yes' : 'No'}}</td>
                         <td>{{ $status->service_offered ? 'Yes' : 'No'}}</td>
                         <td>{{ $status->phone}}</td>
-                        <td>{{ $status->link}}</td>
+                        <td><a href="{{ $status->link}}">{{ $status->link}}</a></td>
                         <td>{{ $status->notes}}</td>
                     </tr>
                 @endforeach
