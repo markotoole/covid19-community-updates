@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
     <link rel="shortcut icon" href="/img/CU favicon.png" type="image/x-icon">
-    <title>Celbridge updates</title>
+    <title>Newbridge updates</title>
 </head>
 <body>
 <div class="content-wrapper brand-background">
@@ -16,7 +16,7 @@
     <div class="bg-castletown"></div>
     <div class="content ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="/">Celbridge updates</a>
+            <a class="navbar-brand" href="/">Newbridge updates</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,18 +32,18 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/blog/updates">Council updates</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Community Group pages
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge Community Help Squad</a>
-                            <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>
-                        </div>
-                    </li>
+                    {{--<li class="nav-item dropdown">--}}
+                        {{--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                            {{--Community Group pages--}}
+                        {{--</a>--}}
+                        {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+                            {{--<a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>--}}
+                            {{--<a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Newbridge Politics FB</a>--}}
+                            {{--<a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Newbridge Community Info FB</a>--}}
+                            {{--<a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Newbridge Community Help Squad</a>--}}
+                            {{--<a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>--}}
+                        {{--</div>--}}
+                    {{--</li>--}}
                 </ul>
             </div>
         </nav>
