@@ -56,7 +56,7 @@ footer {
 
 .tint-gray {
   background: transparent;
-  background: linear-gradient(90deg,rgba(2,0,36,0) 1%,#00000030 10%,rgba(0, 0, 0, 0.3) 91%,rgba(0,212,255,0));
+  background: linear-gradient(90deg,rgba(2,0,36,0) 0%,rgba(0,0,0,0.10) 15%,rgba(0,0,0,.10) 85%,rgba(0,212,255,0));
 }
 
 .main-content {
@@ -83,7 +83,7 @@ footer {
 }
 
 .bg-castletown {
-  background-image: url("/img/home/castletown.min.jpg");
+  background-image: url("/img/home/newbridge.jpg");
   position: absolute;
   top: 0;
   bottom: 0;
