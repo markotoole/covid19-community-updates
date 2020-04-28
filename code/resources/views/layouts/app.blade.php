@@ -42,6 +42,7 @@
                             <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
                             <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge Community Help Squad</a>
                             <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>
+                            <a class="dropdown-item" href="http://celbridgecommunitycouncil.ie/">Celbridge Community Council</a>
                         </div>
                     </li>
                 </ul>
