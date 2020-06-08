@@ -69,7 +69,7 @@ class PostController extends AdminController
         $form->text('title', __('Title'));
         $form->select('type', __('Type'))->options( Post::getTypes());
         $form->image('title_image')
-             ->move('public/upload/image1/');
+             ->move('public/upload/image1');
         $form->ckeditor('summary', __('Summary'));
         $form->ckeditor('content', __('Content'));
         $form->switch('active', __('Active'));
