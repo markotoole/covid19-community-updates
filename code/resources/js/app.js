@@ -1,6 +1,13 @@
 require('./bootstrap')
 
 $(document).ready(function () {
+  var $updateForm = $('#update-form')
+  var $updateId = $('#update-id')
+  var $nameTitle = $('#name')
+  var $typeInput = $('#inp-update_type')
+  var $collectionWrapper = $('#collection-inp')
+  var $deliveryWrapper = $('#delivery-inp')
+
   function checkState (target) {
     var type = target.val()
 
@@ -17,8 +24,19 @@ $(document).ready(function () {
     }
   }
 
-  var $table = $('#table-service')
-  $table.DataTable({
+  function checkType (target) {
+    var type = target.val()
+    if (type === 'Business') {
+      $collectionWrapper.show()
+      $deliveryWrapper.show()
+    } else {
+      $collectionWrapper.hide()
+      $deliveryWrapper.hide()
+    }
+  }
+
+  var $tables = $('.table-service  table')
+  $('.table-service.table-business  table').DataTable({
     response: true,
     dom: '<"table-top"if>rt<"table-bottom"lp>',
     paging: false,
@@ -28,19 +46,27 @@ $(document).ready(function () {
     },
     order: [[2, 'desc'], [3, 'desc']]
   })
-  $table.css('width', '100%')
+  $('.table-service.table-community  table').DataTable({
+    response: true,
+    dom: '<"table-top"if>rt<"table-bottom"lp>',
+    paging: false,
+    language: {
+      searchPlaceholder: 'Search',
+      search: '',
+    },
+    order: [[2, 'desc']]
+  })
+  $('#myTabs .nav-item').one('click', function () {
+    setTimeout(function () {
+      $($.fn.dataTable.tables(true)).DataTable()
+        .responsive.recalc()
+    }, 200)
+  })
+  $tables.css('width', '100%')
 
   $(window).resize(function () {
-    $table.css('width', '100%')
+    $tables.css('width', '100%')
   })
-
-  $(window).resize(function () {
-    $('#log').append('<div>Handler for .resize() called.</div>')
-  })
-
-  var $updateForm = $('#update-form')
-  var $updateId = $('#update-id')
-  var $nameTitle = $('#name')
 
   $('#update-id select').autoComplete()
 
@@ -63,6 +89,11 @@ $(document).ready(function () {
   $('#inp-update_status').on('change', function (event) {
     checkState($(event.target))
 
+  })
+
+  checkType($typeInput)
+  $typeInput.on('change', function (event) {
+    checkType($(event.target))
   })
 
   $('.blog .card').on('click', function () {

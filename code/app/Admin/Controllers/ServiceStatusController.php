@@ -60,6 +60,7 @@ class ServiceStatusController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
+        $grid->column('type', __('Type'));
         $grid->column('status', __('Status'));
         $grid->column('delivery', __('Delivery'));
         $grid->column('service_offered', __('Service offered'));
@@ -92,6 +93,7 @@ class ServiceStatusController extends AdminController
         $show->field('id', __('Id'));
 
         $show->field('name', __('Name'));
+        $show->field('type', __('Type'));
         $show->field('status', __('Status'));
         $show->field('delivery', __('Delivery'));
         $show->field('service_offered', __('Service offered'));
@@ -117,6 +119,8 @@ class ServiceStatusController extends AdminController
 
         $form->text('name', __('Name'))
              ->required();
+        $form->select('type', __('Type'))
+             ->options(ServiceStatus::getSelectEnum('type'));
         $categories = [];
         foreach (Category::all() as $category) {
             $categories[$category->id] = $category->name;

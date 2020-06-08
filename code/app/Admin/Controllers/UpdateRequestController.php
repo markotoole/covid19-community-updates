@@ -61,6 +61,8 @@ class UpdateRequestController extends AdminController
         $grid->column('state', __('State'));
         $grid->status()
              ->name(__('Name'));
+        $grid->status()
+             ->type(__('Type'));
         $grid->column('status.category_id')
              ->display(
                  function ($category_id) {
@@ -102,6 +104,7 @@ class UpdateRequestController extends AdminController
         $show->status(
             'Status Update',
             function ($status) {
+                $status->field('type', __('Type'));
                 $status->field('name', __('Name'));
                 $status->field('status', __('Status'));
                 $status->field('delivery', __('Delivery'));
@@ -168,6 +171,8 @@ class UpdateRequestController extends AdminController
     {
         $form->text($fieldPrefix.'.name', __('Name'))
              ->required();
+        $form->select($fieldPrefix.'.type', __('Type'))
+             ->options(ServiceStatus::getSelectEnum('type'));
         $categories = [];
         foreach (Category::all() as $category) {
             $categories[$category->id] = $category->name;
@@ -188,6 +193,8 @@ class UpdateRequestController extends AdminController
     {
         $form->text($fieldPrefix.'.name', __('Name'))
              ->disable();
+        $form->select($fieldPrefix.'.type', __('Type'))
+             ->options(ServiceStatus::getSelectEnum('type'));
         $categories = [];
         foreach (Category::all() as $category) {
             $categories[$category->id] = $category->name;

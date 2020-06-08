@@ -10,7 +10,9 @@ class UpdateRequestController extends Controller
 {
     public function submitForm()
     {
-        $categories = \App\Models\Category::query()->orderBy('name')->get();
+        $categories = \App\Models\Category::query()
+                                          ->orderBy('name')
+                                          ->get();
         $statuses = ServiceStatus::getSelectEnum('status');
         $statuses = array_merge($statuses, ['' => 'Choose current status']);
 
@@ -28,6 +30,7 @@ class UpdateRequestController extends Controller
                 ->withErrors($validator, 'updateErrorBag');
         }
         $status = new ServiceStatus();
+        $status->type = $request->update_type;
         $status->category_id = $request->category;
         $status->status = $request->status;
         $status->name = $request->name ?? $request->update_id;

@@ -11,7 +11,7 @@ class ServiceStatus extends \Illuminate\Database\Eloquent\Model
      */
     protected $table = 'service_statuses';
 
-    protected $fillable = ['status', 'delivery', 'service_offered', 'phone', 'link', 'notes', 'draft_status'];
+    protected $fillable = ['status', 'delivery', 'service_offered', 'phone', 'link', 'notes', 'draft_status', 'type'];
 
     protected $guarded = ['id', 'name'];
 
@@ -20,6 +20,11 @@ class ServiceStatus extends \Illuminate\Database\Eloquent\Model
         'Public' => 'Public',
         'Draft' => 'Draft',
         'Closed' => 'Closed',
+    ];
+
+    protected $enumTypes = [
+        'Business' => 'Business',
+        'Community groups' => 'Community groups',
     ];
 
     protected $enumStatuses = [

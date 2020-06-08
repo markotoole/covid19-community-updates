@@ -11,6 +11,7 @@ class ServiceUpdateController extends Controller
     public function searchByName(Request $request)
     {
         $q = $request->get('q');
+        $type = $request->get('type');
 
         $instances = ServiceStatus::where('name', 'like', "%$q%")
                                   ->where('draft_status', '=', 'Public')
