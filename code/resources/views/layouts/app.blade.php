@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
     <link rel="shortcut icon" href="/img/CU favicon.png" type="image/x-icon">
     <title>Celbridge updates</title>
+    <meta property="og:image" content="/img/share/share.png" />
 </head>
 <body>
 <div class="content-wrapper brand-background">
