@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('og-title'){!! $post->title !!} @stop
+@section('og-image'){!! app()->make('url')->to('/uploads/' . $post->title_image) !!} @stop
+
 @section('content')
     <div class="post">
         <div class="tint-gray">

@@ -5,7 +5,7 @@
         <div class="page-header">
             <div class="container">
                 <div class="title text-white">
-                    Celbridge Status-Updates
+                    {{config('variables.home_title')}}
                 </div>
             </div>
             <div class="flex-center mt-5"><a class="btn btn-primary btn-lg" href="/submit">Submit an Update</a></div>

@@ -24,7 +24,8 @@ php artisan key:generate
 php artisan migrate
 php artisan db:seed
 php artisan admin:install
-
+php artisan admin:import media-manager
+php artisan storage:link
 ```
 
 ### Developing

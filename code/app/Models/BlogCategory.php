@@ -6,16 +6,25 @@ class BlogCategory
 {
     public static function getCategory($type)
     {
+        $mail = config('variables.mail');
         $types = [
             'updates' => [
                 'title' => 'Council updates',
-                'description' => 'Please let us know of other updates by emailing <a
-                        href="mailto:hello@ourcelbridge.info">hello@ourcelbridge.info</a>',
+                'description' => sprintf(
+                    'Please let us know of other updates by emailing <a
+                        href="mailto:%s">%s</a>',
+                    $mail,
+                    $mail
+                ),
             ],
             'supports' => [
                 'title' => 'Business & Community supports',
-                'description' => 'Please let us know if there are other supports that should be included by emailing <a
-                        href="mailto:hello@ourcelbridge.info">hello@ourcelbridge.info</a>',
+                'description' => sprintf(
+                    'Please let us know if there are other supports that should be included by emailing <a
+                        href="mailto:%s">%s</a>',
+                    $mail,
+                    $mail
+                ),
             ],
         ];
 

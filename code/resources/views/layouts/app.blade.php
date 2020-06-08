@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-    <link rel="shortcut icon" href="/img/CU favicon.png" type="image/x-icon">
-    <title>Celbridge updates</title>
-    <meta property="og:image" content="{{app()->make('url')->to('/')}}/img/share/share.png" />
+    <link rel="shortcut icon" href="{{config('variables.favicon_path')}}" type="image/x-icon">
+    <title>{{config('variables.title')}}</title>
+    <meta property="og:title" content="@yield('og-title', config('variables.title'))"/>
+    <meta property="og:image" content="@yield('og-image', app()->make('url')->to('/img/share/share.png'))"/>
+    <style>
+        .bg-main {
+            background-image: url("{{config('variables.bg_path')}}");
+        }
+    </style>
 </head>
 <body>
 <div class="content-wrapper brand-background">
 
-    <div class="bg-castletown"></div>
+    <div class="bg-main"></div>
     <div class="content ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="/">Celbridge updates</a>
+            <a class="navbar-brand" href="/">{{config('variables.title')}}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,16 +40,23 @@
                     <li class="nav-item"><a class="nav-link" href="/blog/updates">Council updates</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Community Group pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge Information FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge Politics FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge Community Info FB</a>
-                            <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge Community Help Squad</a>
-                            <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare Map of Community Support Groups</a>
-                            <a class="dropdown-item" href="http://celbridgecommunitycouncil.ie/">Celbridge Community Council</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/420343975007643/">Cebridge
+                                Information FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/celbridgepolitics/">Celbridge
+                                Politics FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/494471597615229/">Celbridge
+                                Community Info FB</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/groups/187943899300471/">Celbridge
+                                Community Help Squad</a>
+                            <a class="dropdown-item" href="https://www.kildareppn.ie/resources/covid-19-community/">Kildare
+                                Map of Community Support Groups</a>
+                            <a class="dropdown-item" href="http://celbridgecommunitycouncil.ie/">Celbridge Community
+                                Council</a>
                         </div>
                     </li>
                 </ul>
@@ -61,7 +74,9 @@
     </div>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
-            <small>Idea & Design by Ross McCarthy (<a href="https://www.status-naas.com/">status-naas.com</a>). Developed by CiviQ. Contact info@civiq.eu | 086 1408681</small>
+            <small>Idea & Design by Ross McCarthy (<a href="https://www.status-naas.com/">status-naas.com</a>).
+                Developed by CiviQ. Contact info@civiq.eu | 086 1408681
+            </small>
         </div>
     </footer>
 </div>
