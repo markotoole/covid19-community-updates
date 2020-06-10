@@ -11,6 +11,7 @@
     <title>{{config('variables.title')}}</title>
     <meta property="og:title" content="@yield('og-title', config('variables.title'))"/>
     <meta property="og:image" content="@yield('og-image', app()->make('url')->to('/img/share/share.png'))"/>
+    <meta property="og:image:secure_url" content="@yield('og-image-secure', app()->make('url')->to('/img/share/share.png'))"/>
     <style>
         .bg-main {
             background-image: url("{{config('variables.bg_path')}}");

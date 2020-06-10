@@ -2,6 +2,7 @@
 
 @section('og-title'){!! $post->title !!} @stop
 @section('og-image'){!! app()->make('url')->to('/uploads/' . $post->title_image) !!} @stop
+@section('og-image-secure'){!! app()->make('url')->to('/uploads/' . $post->title_image) !!} @stop
 
 @section('content')
     <div class="post">
