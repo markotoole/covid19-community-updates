@@ -11,7 +11,8 @@
     <title>{{config('variables.title')}}</title>
     <meta property="og:title" content="@yield('og-title', config('variables.title'))"/>
     <meta property="og:image" content="@yield('og-image', app()->make('url')->to('/img/share/share.png'))"/>
-    <meta property="og:image:secure_url" content="@yield('og-image-secure', app()->make('url')->to('/img/share/share.png'))"/>
+    <meta property="og:image:secure_url"
+          content="@yield('og-image-secure', app()->make('url')->to('/img/share/share.png'))"/>
     <style>
         .bg-main {
             background-image: url("{{config('variables.bg_path')}}");
@@ -36,10 +37,13 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/submit">Submit an Update</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/blog/supports">Government Supports</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/blog/updates">Council updates</a>
-                    </li>
+                    @foreach (\App\Models\BlogCategory::getCategories() as $category => $categoryValue)
+                        @if(\App\Models\Post::countByCategories($category) > 0)
+                            <li class="nav-item"><a class="nav-link"
+                                                    href="/blog/{{ $category }}">{{ $categoryValue['title'] }}</a>
+                            </li>
+                        @endif
+                    @endforeach
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

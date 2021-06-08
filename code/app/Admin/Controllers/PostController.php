@@ -66,12 +66,12 @@ class PostController extends AdminController
     {
         $form = new Form(new Post());
 
-        $form->text('title', __('Title'));
-        $form->select('type', __('Type'))->options( Post::getTypes());
+        $form->text('title', __('Title'))->required();
+        $form->select('type', __('Type'))->options( Post::getTypes())->required();
         $form->image('title_image')
-             ->move('public/upload/image1');
-        $form->ckeditor('summary', __('Summary'));
-        $form->ckeditor('content', __('Content'));
+             ->move('public/upload/image1')->required();
+        $form->ckeditor('summary', __('Summary'))->required();
+        $form->ckeditor('content', __('Content'))->required();
         $form->switch('active', __('Active'));
 
         return $form;

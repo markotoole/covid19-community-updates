@@ -9,9 +9,11 @@
                 </div>
 
             </div>
+            @if(isset($category['description']) && !is_null($category['description']))
             <div class="bg-white p-3" style="max-width: 547px;     border-radius: .25rem;">
                 {!! $category['description'] !!}
             </div>
+            @endif
         </div>
 
     </div>
